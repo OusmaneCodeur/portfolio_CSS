@@ -1,48 +1,48 @@
-/* Styles simples et clairs */
-
+/* Style global*/
 body {
-  font-family: 'Roboto', sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #f9f9f9;
-  color: #333;
-  line-height: 1.6;
+  font-family: 'Roboto', sans-serif; /*L'attribut font-family permet de changer le format du texte*/
+  margin: 0; /*Il permet de faire une marge d'exterieur*/
+  padding: 0;/*Il permet de faire une marge d'interieur*/
+  background: #f9f9f9; /*Il permet de changer la couleur de fond*/
+  color: #333; /*Il permet de changer la couleur du texte*/
+  line-height: 1.6; /*Il permet de faire des espacement entre les lignes */
 }
 
 h1, h2, h3 {
-  color: #222;
+  color: #222; /*Il change les couleurs des texte h1, h2 et h3*/
 }
 
 a {
-  text-decoration: none;
-  color: inherit;
+  text-decoration: none; /*Il permet d'enlever les soulignement des liens des balises a*/
+  letter-spacing: 3px; /*Il permet de faite des espacements entre les lettres des balises a*/
 }
 
 /* Barre de navigation */
 header {
-  background: #4CAF50;
-  padding: 10px 0;
+  background: #4CAF50; /*La couleur de fond de la partie header*/
+  padding: 10px ; /*Un espacement interne*/
 }
 
 nav ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  display: flex; /*Il permet de ranger dans une même ligne*/
+  justify-content: center; /*Il permet de centrer le contenu*/
+  list-style: none; /*Il permet d'enlever les points de la liste*/
+  margin: 0; /*Il permet de faire une marge d'exterieur*/
+  padding: 0; /*Il permet de faire une marge d'interieur*/
 }
 
 nav li {
-  margin: 0 15px;
+  margin: 0 15px; /*Il permet de faire des espacement externe en haut et bas de 0 et de gauche a droite de 15 */
 }
 
 nav a {
   color: white;
-  font-weight: bold;
-  padding: 6px 10px;
-  border-radius: 4px;
+  font-weight: bold; /*Il permet de mettre le texte en gras*/
+  padding: 6px 10px; /*Il permet de faire des espacement interne en haut et bas de 6 et de gauche a droite de 10 */
+  border-radius: 20px; /*Il permet d'arrondir les bordures */
 }
 
+/*Le Hover permet de faire l'effet survol des balises a avec une couleur de blanche et couleur de texte verte*/
 nav a:hover {
   background: white;
   color: #4CAF50;
@@ -51,15 +51,15 @@ nav a:hover {
 /* Sections */
 section {
   padding: 40px 20px;
-  max-width: 800px;
-  margin: 20px auto;
+  max-width: 800px; /*Il permet de definir la largeur maximal*/
+  margin: 30px auto; /*Il definit une Mmarge automatique*/
   background: white;
   border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px #4CAF50; /*Il cree un effet d'ombre*/
 }
 
 section img {
-  display: block;
+  display: block; /*Il permet de prendre toute la largeure*/
   margin: 20px auto;
   border-radius: 8px;
   max-width: 100%;
@@ -70,35 +70,30 @@ article {
   margin-bottom: 15px;
   padding: 12px;
   background: #e8f5e9;
-  border-left: 4px solid #4CAF50;
+  border-left: 4px solid #4CAF50; /*Il permet de faire une a gauche et de le donner une couleur*/
   border-radius: 4px;
 }
 
 /* Tableau CV */
 table {
-  width: 100%;
-  border-collapse: collapse;
+  width: 100%; /*Il prend toute la largeur*/
+  border-collapse: collapse; /*Il permet de coller le coller a la bordure*/
 }
 
 th, td {
   padding: 10px;
-  border: 1px solid #ddd;
+  border: 1px solid #ddd; /*Il cree des bordures*/
 }
 
 th {
-  background: #4CAF50;
+  background: #4CAF50; 
   color: white;
-}
-
-tr:nth-child(even) {
-  background: #f2f2f2;
 }
 
 /* Formulaire */
 form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  display: flex; 
+  flex-direction: column; /*Il permet de soperpose les blocs*/
 }
 
 input, textarea {
@@ -113,7 +108,7 @@ button {
   padding: 10px;
   border: none;
   border-radius: 4px;
-  cursor: pointer;
+  cursor: pointer; /*Il permet de mettre le curseur sur les boutons*/
 }
 
 button:hover {
